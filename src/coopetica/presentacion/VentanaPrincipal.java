@@ -25,7 +25,7 @@ public class VentanaPrincipal extends JFrame {
 
     public VentanaPrincipal() {
 
-        setTitle("CoopeTica · Camila Arce");
+        setTitle("CoopeTica · Camila Valeria Cabrera Arce");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
