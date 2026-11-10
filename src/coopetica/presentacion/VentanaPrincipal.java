@@ -85,12 +85,14 @@ public class VentanaPrincipal extends JFrame {
         try {
             String mensaje = servicio.registrarDesdeTexto(campoCedula.getText(),
                     campoNombre.getText(), campoSaldo.getText());
+                    
 
             if (mensaje.equals("OK")) {
                 JOptionPane.showMessageDialog(this, "Asociado registrado correctamente.");
                 campoCedula.setText("");
                 campoNombre.setText("");
                 campoSaldo.setText("");
+                campoCedula.requestFocus();
                 listar();
             } else {
                 JOptionPane.showMessageDialog(this, mensaje,
