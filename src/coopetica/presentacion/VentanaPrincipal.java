@@ -57,6 +57,9 @@ public class VentanaPrincipal extends JFrame {
         botonBuscar.addActionListener(e -> buscar());
         botonResumen.addActionListener(e -> mostrarResumen());
 
+        botonResumen.setToolTipText("Muestra cuantos asociados hay y el total de aportes");
+        botonBuscar.setToolTipText("Busca un asociado por su cedula");
+
         pack();
         setLocationRelativeTo(null);
 
